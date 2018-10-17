@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class="calculator" id="calculator">
+                <section class="display">
+                    <p class="display-detail">0</p>
+                </section>
+                <section class="buttons">
+                    <button v-on:click="clearData()" class="fullwidth">C</button>
+                    <button v-on:click="inputNum(7)" class="number">7</button>
+                    <button v-on:click="inputNum(8)" class="number">8</button>
+                    <button v-on:click="inputNum(9)" class="number">9</button>
+                    <button class="symbol">/</button>
+                    <button v-on:click="inputNum(4)" class="number">4</button>
+                    <button v-on:click="inputNum(5)" class="number">5</button>
+                    <button v-on:click="inputNum(6)" class="number">6</button>
+                    <button class="symbol">X</button>
+                    <button v-on:click="inputNum(1)" class="number">1</button>
+                    <button v-on:click="inputNum(2)" class="number">2</button>
+                    <button v-on:click="inputNum(3)" class="number">3</button>
+                    <button class="symbol">-</button>
+                    <button v-on:click="inputNum(0)" class="number">0</button>
+                    <button class="number">.</button>
+                    <button class="symbol">%</button>
+                    <button class="symbol">+</button>
+                    <button class="fullwidth">=</button>
+                    
+                </section>
+            </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
