@@ -16,7 +16,7 @@
         <div class="container">
             <section class="calculator" id="calculator">
                 <section class="display">
-                    <p class="display-detail">0</p>
+                    <p class="display-detail">{{ displayNumber || 0 }}</p>
                 </section>
                 <section class="buttons">
                     <button v-on:click="clearData()" class="fullwidth">C</button>
