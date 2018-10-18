@@ -7,14 +7,18 @@ var app = new Vue({
   },
   methods: {
     inputNum: function (input) {
-      // screen array can only add a zero if the array length is zero
-      if (this.screenArray[0] !== 0) {
-        
+      if (input === '.' && this.screenArray.indexOf('.') === -1) {
+        if (this.screenArray.length === 0) {
+          this.screenArray.push(0);
+          this.screenArray.push(input);
+        } else {
+          this.screenArray.push(input);
+        }
+      } else if (typeof input === 'number') {
+        this.screenArray.push(input);
       }
-
-
-
-
+    },
+    inputDec: function (input) {
     },
     clearData: function () {
       this.screenArray = [];
